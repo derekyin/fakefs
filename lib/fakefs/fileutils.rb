@@ -56,6 +56,8 @@ module FakeFS
       end
     end
 
+    alias remove_dir rmdir
+
     def rm(list, options = {})
       Array(list).each do |path|
         FileSystem.delete(path) ||

@@ -218,6 +218,7 @@ class FakeFSTest < Minitest::Test
     assert FileUtils.respond_to?(:move)
     assert FileUtils.respond_to?(:copy)
     assert FileUtils.respond_to?(:remove)
+    assert FileUtils.respond_to?(:remove_dir)
     assert FileUtils.respond_to?(:rmtree)
     assert FileUtils.respond_to?(:safe_unlink)
     assert FileUtils.respond_to?(:cmp)
